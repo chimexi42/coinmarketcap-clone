@@ -40,6 +40,7 @@ export default function Home(props) {
         <th>24H Change</th>
         <th>Price</th>
         <th>Market</th>
+        <th>Total Supply</th>
         </tr>
         </thead>
         <tbody>
@@ -60,6 +61,7 @@ export default function Home(props) {
               </td>
             <td>{formatDollar(coin.current_price, 20)}</td>
             <td>{formatDollar(coin.market_cap, 12)}</td>
+            <td>{coin.total_supply}</td>
             </tr>
         ))}
         </tbody>
